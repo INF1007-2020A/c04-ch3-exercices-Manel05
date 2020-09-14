@@ -15,7 +15,7 @@ Traceback (most recent call last):
   File "test_exercice.py", line 16, in <listcomp>
     output = [exercice.square_root(v) for v in values]
   File "/home/runner/work/c04-ch3-exercices-Manel05/c04-ch3-exercices-Manel05/exercice.py", line 8, in square_root
-    return sqrt(a)
+    return (sqrt(a))
 NameError: name 'sqrt' is not defined
 
 ======================================================================
