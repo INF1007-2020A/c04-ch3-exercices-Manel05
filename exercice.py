@@ -3,7 +3,7 @@
 
 
 import math
-from math import
+from math import *
 
 def square_root(a: float) -> float:
     return (sqrt(a))
