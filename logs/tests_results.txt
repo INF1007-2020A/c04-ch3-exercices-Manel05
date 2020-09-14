@@ -1,5 +1,5 @@
-test_average (__main__.TestExercice) ... FAIL
-test_square (__main__.TestExercice) ... FAIL
+test_average (__main__.TestExercice) ... ok
+test_square (__main__.TestExercice) ... ok
 test_square_root (__main__.TestExercice) ... ERROR
 test_to_celsius (__main__.TestExercice) ... FAIL
 test_to_degrees (__main__.TestExercice) ... FAIL
@@ -15,38 +15,8 @@ Traceback (most recent call last):
   File "test_exercice.py", line 16, in <listcomp>
     output = [exercice.square_root(v) for v in values]
   File "/home/runner/work/c04-ch3-exercices-Manel05/c04-ch3-exercices-Manel05/exercice.py", line 8, in square_root
-    print(sqrt(a))
+    return sqrt(a)
 NameError: name 'sqrt' is not defined
-
-======================================================================
-FAIL: test_average (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 50, in test_average
-    'Mauvais calcul de la moyenne'
-AssertionError: Lists differ: [0.0, 0.0, 0.0] != [4.0, 0.0, -2.3333333333333335]
-
-First differing element 0:
-0.0
-4.0
-
-- [0.0, 0.0, 0.0]
-+ [4.0, 0.0, -2.3333333333333335] : Mauvais calcul de la moyenne
-
-======================================================================
-FAIL: test_square (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 34, in test_square
-    'Mauvais calcul du carré'
-AssertionError: Lists differ: [0.0, 0.0, 0.0] != [144, 40000, 400]
-
-First differing element 0:
-0.0
-144
-
-- [0.0, 0.0, 0.0]
-+ [144, 40000, 400] : Mauvais calcul du carré
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
@@ -114,4 +84,4 @@ First differing element 0:
 ----------------------------------------------------------------------
 Ran 7 tests in 0.002s
 
-FAILED (failures=6, errors=1)
+FAILED (failures=4, errors=1)
